@@ -29,9 +29,20 @@
 
             /* Full viewport height */
         }
+
+        .w-full {
+            width: 100%;
+        }
     </style>
 
-
+    <script>
+        function toggleCards() {
+            const hiddenCards = document.querySelectorAll('.hidden-card');
+            hiddenCards.forEach(card => {
+                card.classList.toggle('hidden');
+            });
+        }
+    </script>
 </head>
 
 <body>
@@ -65,23 +76,15 @@
             <a class="text-gray-700 font-medium hover:text-purple-600 transition duration-300 ease-in-out" href="#">
                 Pricing
             </a>
-            <div class="relative group">
-                <button class="text-gray-700 font-medium hover:text-purple-600 transition duration-300 ease-in-out">
-                    Resources
-                    <i class="fas fa-chevron-down ml-1 text-sm">
-                    </i>
-                </button>
-                <!-- Dropdown menu -->
-                <div
-                    class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md transition duration-300 ease-in-out">
-                    <a class="block px-4 py-2 text-gray-700 hover:bg-gray-100" href="#">
-                        Resource 1
-                    </a>
-                    <a class="block px-4 py-2 text-gray-700 hover:bg-gray-100" href="#">
-                        Resource 2
-                    </a>
-                </div>
-            </div>
+
+            <a class="text-gray-700 font-medium hover:text-purple-600 transition duration-300 ease-in-out" href="#">
+                Our Domains
+            </a>
+
+            <a class="text-gray-700 font-medium hover:text-purple-600 transition duration-300 ease-in-out" href="#">
+                FAQ
+            </a>
+
         </div>
         <div class="flex items-center space-x-4">
             <a class="text-gray-700 font-medium hover:text-purple-600 transition duration-300 ease-in-out" href="#">
@@ -100,8 +103,9 @@
     <!-- Wrap the hero section in a container -->
     <div class="hero-container flex items-center justify-center min-h-screen">
         <div class="text-center ">
-            <h1 class="text-4xl md:text-5xl font-bold text-gray-900">B2B customer support<br>with AI super powers</h1>
-            <p class="text-gray-500 mt-4">Support and grow your customers in <span class="italic">Email</span></p>
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900">Build Stunning Websites<br>Faster and Smarter</h1>
+            <p class="text-gray-500 mt-4">Empowering businesses with AI-driven tools for seamless design and
+                development.</p>
             <div class="mt-6 flex justify-center space-x-4">
                 <button
                     class="bg-purple-600 text-white py-2 px-6 rounded-full text-lg font-semibold hover:bg-purple-700 transition duration-300">
@@ -393,7 +397,7 @@
             Our Domains
         </h1>
     </div>
-    <div class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-8 px-4 pb-24">
+    <div class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-8 px-4">
         <!-- Sales Card -->
         <div class="bg-green-100 rounded-3xl p-6 text-center w-full md:w-1/4">
             <img alt="A person in a video call for sales" class="rounded-lg mb-4 mx-auto" height="150"
@@ -443,6 +447,60 @@
             </p>
         </div>
     </div>
+    <div
+        class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-8 px-4 hidden-card hidden">
+        <!-- Marketing Card -->
+        <div class="bg-yellow-100 rounded-3xl p-6 text-center w-full md:w-1/4">
+            <img alt="A person in a video call for marketing" class="rounded-lg mb-4 mx-auto" height="150"
+                src="https://storage.googleapis.com/a1aa/image/marketing.jpg" width="225" />
+            <h2 class="text-xl font-semibold mb-2 text-yellow-800">
+                Marketing
+            </h2>
+            <p class="text-yellow-700 text-sm leading-relaxed">
+                Create engaging video content to boost your marketing efforts.
+            </p>
+        </div>
+        <!-- HR Card -->
+        <div class="bg-red-100 rounded-3xl p-6 text-center w-full md:w-1/4">
+            <img alt="A person in a video call for HR" class="rounded-lg mb-4 mx-auto" height="150"
+                src="https://storage.googleapis.com/a1aa/image/hr.jpg" width="225" />
+            <h2 class="text-xl font-semibold mb-2 text-red-800">
+                HR
+            </h2>
+            <p class="text-red-700 text-sm leading-relaxed">
+                Use video to streamline your HR processes and improve communication.
+            </p>
+        </div>
+        <!-- Education Card -->
+        <div class="bg-teal-100 rounded-3xl p-6 text-center w-full md:w-1/4">
+            <img alt="A person in a video call for education" class="rounded-lg mb-4 mx-auto" height="150"
+                src="https://storage.googleapis.com/a1aa/image/education.jpg" width="225" />
+            <h2 class="text-xl font-semibold mb-2 text-teal-800">
+                Education
+            </h2>
+            <p class="text-teal-700 text-sm leading-relaxed">
+                Enhance learning experiences with interactive video content.
+            </p>
+        </div>
+        <!-- Healthcare Card -->
+        <div class="bg-pink-100 rounded-3xl p-6 text-center w-full md:w-1/4">
+            <img alt="A person in a video call for healthcare" class="rounded-lg mb-4 mx-auto" height="150"
+                src="https://storage.googleapis.com/a1aa/image/healthcare.jpg" width="225" />
+            <h2 class="text-xl font-semibold mb-2 text-pink-800">
+                Healthcare
+            </h2>
+            <p class="text-pink-700 text-sm leading-relaxed">
+                Improve patient care with personalized video consultations.
+            </p>
+        </div>
+    </div>
+    <div class="text-center mt-8">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded-full" onclick="toggleCards()">
+            View All
+        </button>
+    </div>
+
+
 
 
 
@@ -460,7 +518,7 @@
 
     <footer>
 
-        <div class="container mx-auto px-4 bg-gray-100">
+        <div class="container mx-0 px-4 bg-gray-100 w-full">
             <div class="grid grid-cols-2 md:grid-cols-5 gap-8 text-gray-600">
                 <div>
                     <h3 class="font-bold text-gray-800 mb-4">
@@ -565,51 +623,31 @@
                         </li>
                     </ul>
                 </div>
-                <div class="flex flex-col items-start">
-                    <img alt="Draftbit logo" class="mb-2" height="24"
-                        src="https://storage.googleapis.com/a1aa/image/2Vg4IiQT0opZLBpG5RNOig7kW9Tj6cttXyldxkX7AoSeeC5TA.jpg"
-                        width="24" />
-                    <span class="font-bold text-gray-800 whitespace-nowrap mb-4">
-                        Build apps, visually.
-                    </span>
-                    <p class="text-gray-600 mb-4">
-                        Copyright 2023 Draftbit, Inc.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a class="text-gray-600 hover:text-gray-800" href="#">
-                            <i class="fab fa-twitter">
-                            </i>
-                        </a>
-                        <a class="text-gray-600 hover:text-gray-800" href="#">
-                            <i class="fab fa-github">
-                            </i>
-                        </a>
-                    </div>
-                </div>
+
             </div>
         </div>
 
 
-        <div class="flex justify-between items-center p-4">
-            <div class="flex space-x-4">
-                <a class="bg-purple-100 p-2 rounded-full" href="#">
+        <div class="h-[200px] flex justify-between items-top p-4">
+            <div class="flex space-x-4 pt-8">
+                <a class="bg-purple-100 p-2 rounded-full h-fit" href="#">
                     <i class="fab fa-twitter text-gray-600 icon-hover"></i>
                 </a>
-                <a class="bg-purple-100 p-2 rounded-full" href="#">
+                <a class="bg-purple-100 p-2 rounded-full h-fit" href="#">
                     <i class="fab fa-linkedin-in text-gray-600 icon-hover"></i>
                 </a>
-                <a class="bg-purple-100 p-2 rounded-full" href="#">
+                <a class="bg-purple-100 p-2 rounded-full h-fit" href="#">
                     <i class="fab fa-youtube text-gray-600 icon-hover"></i>
                 </a>
-                <a class="bg-purple-100 p-2 rounded-full" href="#">
+                <a class="bg-purple-100 p-2 rounded-full h-fit" href="#">
                     <i class="fab fa-instagram text-gray-600 icon-hover"></i>
                 </a>
-                <a class="bg-purple-100 p-2 rounded-full" href="#">
+                <a class="bg-purple-100 p-2 rounded-full h-fit" href="#">
                     <i class="fab fa-tiktok text-gray-600 icon-hover"></i>
                 </a>
                 <a class="text-blue-600" href="#">Loom Terms & Policies</a>
             </div>
-            <div class="text-right">
+            <div class="text-right pt-8">
                 <div class="flex items-center space-x-2 justify-end">
                     <img src="https://placehold.co/20x20" alt="Atlassian logo" class="h-5">
                     <span class="text-blue-600 font-bold">ATLASSIAN</span>
