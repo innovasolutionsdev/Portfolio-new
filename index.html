@@ -1,6 +1,7 @@
-<!-- Nav bar -->
-
+<!DOCTYPE html>
 <html lang="en">
+
+
 
 <head>
     <meta charset="utf-8" />
@@ -448,10 +449,463 @@
 
     <!-- Products -->
 
+
+
+    <!-- Hero -->
+
+    <!-- Pricing -->
+
+    <!-- Domains -->
+
+    <!-- Products -->
+    <style>
+        .slideshow-container {
+            position: relative;
+            width: 100%;
+            max-width: 200px;
+            height: 150px;
+            overflow: hidden;
+        }
+
+        .slideshow-slide {
+            display: none;
+            width: 100%;
+            height: 100%;
+        }
+
+        .slideshow-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .slideshow-container .active {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .features-list {
+                display: none;
+            }
+
+            .view-features-btn {
+                display: block;
+            }
+
+            .slideshow-container {
+                max-width: 100%;
+                /* height: auto; */
+            }
+
+            .slideshow-slide img {
+                width: 100%;
+                /* height: auto; */
+            }
+        }
+
+        @media (min-width: 769px) {
+            .view-features-btn {
+                display: none;
+            }
+        }
+    </style>
+    <div class="bg-gray-100 flex items-center justify-center min-h-screen">
+        <div class="flex flex-col gap-6 w-full max-w-6xl px-4">
+            <!-- Basic Plan -->
+            <div class="bg-white rounded-lg shadow-lg p-6 w-full mb-2">
+                <div class="flex flex-col md:flex-row gap-16">
+                    <div class="slideshow-container relative" id="slideshow-basic">
+                        <div class="slideshow-slide active">
+                            <img alt="Screenshot of the Basic plan dashboard" height="150"
+                                src="https://storage.googleapis.com/a1aa/image/KBpUTMlqJJ4tLBCgwhSSn6tBcPOO8enzz4SpgLU1ip6Zij8JA.jpg"
+                                width="200" />
+                        </div>
+                        <div class="slideshow-slide">
+                            <img alt="Screenshot of the Basic plan analytics" height="150"
+                                src="https://storage.googleapis.com/a1aa/image/vVafkVTyGLQOHS7A45ESWuCS2EWZfX8kRETEZ4GYBuAyEH5TA.jpg"
+                                width="200" />
+                        </div>
+                        <div class="slideshow-slide">
+                            <img alt="Screenshot of the Basic plan settings" height="150"
+                                src="https://storage.googleapis.com/a1aa/image/8qDZWUGNh442BJH6LynfSWYVA75A0PyBRz58TNHKZvmaij8JA.jpg"
+                                width="200" />
+                        </div>
+                        <button
+                            class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-1"
+                            onclick="plusSlides(-1, 'slideshow-basic')">&#10094;</button>
+                        <button
+                            class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-1"
+                            onclick="plusSlides(1, 'slideshow-basic')">&#10095;</button>
+                    </div>
+                    <div class="text-center">
+                        <h2 class="font-bold mb-4">Comprehensive Gym Management System</h2>
+                        <div class="flex flex-col md:flex-row gap-16">
+
+                            <ul class="space-y-4 features-list" id="features-basic">
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fas fa-check-circle text-purple-600 mr-2">
+                                    </i>
+                                    AI Advisor
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fas fa-check-circle text-purple-600 mr-2">
+                                    </i>
+                                    Unlimited auto tracking
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fas fa-check-circle text-purple-600 mr-2">
+                                    </i>
+                                    1 Day transaction clearing
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fas fa-check-circle text-purple-600 mr-2">
+                                    </i>
+                                    1 Day transaction clearing
+                                </li>
+                            </ul>
+                            <ul class="space-y-4 features-list" id="features-basic">
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fas fa-check-circle text-purple-600 mr-2">
+                                    </i>
+                                    AI Advisor
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fas fa-check-circle text-purple-600 mr-2">
+                                    </i>
+                                    Unlimited auto tracking
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fas fa-check-circle text-purple-600 mr-2">
+                                    </i>
+                                    1 Day transaction clearing
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fas fa-check-circle text-purple-600 mr-2">
+                                    </i>
+                                    1 Day transaction clearing
+                                </li>
+                            </ul>
+                            <button class="view-features-btn mt-6 bg-purple-600 text-white py-2 px-4 rounded-lg"
+                                onclick="toggleFeatures('basic', this)">
+                                View All Features
+                            </button>
+                            <div class="flex md:flex-col flex-row gap-6justify-center items-center">
+                                <div class="text-4xl font-bold text-purple-600 mt-4">
+                                    $80
+                                </div>
+                                <button class="mt-6 bg-purple-600 text-white py-2 px-4 rounded-lg">
+                                    Buy Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Advanced Plan -->
+            <div class="bg-white rounded-lg shadow-lg p-6 w-full mb-6">
+                <div class="flex flex-col md:flex-row gap-16">
+                    <div class="slideshow-container relative" id="slideshow-basic">
+                        <div class="slideshow-slide active">
+                            <img alt="Screenshot of the Basic plan dashboard" height="150"
+                                src="https://storage.googleapis.com/a1aa/image/KBpUTMlqJJ4tLBCgwhSSn6tBcPOO8enzz4SpgLU1ip6Zij8JA.jpg"
+                                width="200" />
+                        </div>
+                        <div class="slideshow-slide">
+                            <img alt="Screenshot of the Basic plan analytics" height="150"
+                                src="https://storage.googleapis.com/a1aa/image/vVafkVTyGLQOHS7A45ESWuCS2EWZfX8kRETEZ4GYBuAyEH5TA.jpg"
+                                width="200" />
+                        </div>
+                        <div class="slideshow-slide">
+                            <img alt="Screenshot of the Basic plan settings" height="150"
+                                src="https://storage.googleapis.com/a1aa/image/8qDZWUGNh442BJH6LynfSWYVA75A0PyBRz58TNHKZvmaij8JA.jpg"
+                                width="200" />
+                        </div>
+                        <button class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-1"
+                            onclick="plusSlides(-1, 'slideshow-basic')">&#10094;</button>
+                        <button class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-1"
+                            onclick="plusSlides(1, 'slideshow-basic')">&#10095;</button>
+                    </div>
+                    <div class="text-center">
+                        <h2 class="font-bold mb-4">Comprehensive Gym Management System</h2>
+                        <div class="flex flex-col md:flex-row gap-16">
+            
+                            <ul class="space-y-4 features-list" id="features-basic">
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fas fa-check-circle text-purple-600 mr-2">
+                                    </i>
+                                    AI Advisor
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fas fa-check-circle text-purple-600 mr-2">
+                                    </i>
+                                    Unlimited auto tracking
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fas fa-check-circle text-purple-600 mr-2">
+                                    </i>
+                                    1 Day transaction clearing
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fas fa-check-circle text-purple-600 mr-2">
+                                    </i>
+                                    1 Day transaction clearing
+                                </li>
+                            </ul>
+                            <ul class="space-y-4 features-list" id="features-basic">
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fas fa-check-circle text-purple-600 mr-2">
+                                    </i>
+                                    AI Advisor
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fas fa-check-circle text-purple-600 mr-2">
+                                    </i>
+                                    Unlimited auto tracking
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fas fa-check-circle text-purple-600 mr-2">
+                                    </i>
+                                    1 Day transaction clearing
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fas fa-check-circle text-purple-600 mr-2">
+                                    </i>
+                                    1 Day transaction clearing
+                                </li>
+                            </ul>
+                            <button class="view-features-btn mt-6 bg-purple-600 text-white py-2 px-4 rounded-lg"
+                                onclick="toggleFeatures('basic', this)">
+                                View All Features
+                            </button>
+                            <div class="flex flex-col justify-center items-center">
+                                <div class="text-4xl font-bold text-purple-600 mt-4">
+                                    $80
+                                </div>
+                                <button class="mt-6 bg-purple-600 text-white py-2 px-4 rounded-lg">
+                                    Buy Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+        </div>
+        <script>
+            function plusSlides(n, slideshowId) {
+                let slides = document.querySelectorAll(`#${slideshowId} .slideshow-slide`);
+                let activeIndex = Array.from(slides).findIndex(slide => slide.style.display === "block");
+                slides[activeIndex].style.display = "none";
+                let newIndex = activeIndex + n;
+                if (newIndex >= slides.length) {
+                    newIndex = 0;
+                }
+                if (newIndex < 0) {
+                    newIndex = slides.length - 1;
+                }
+                slides[newIndex].style.display = "block";
+            }
+
+            document.querySelectorAll('.slideshow-container').forEach(container => {
+                container.querySelector('.slideshow-slide').style.display = 'block';
+            });
+
+            function toggleFeatures(plan, button) {
+                const featuresList = document.querySelectorAll(`#features-${plan}`);
+                featuresList.forEach(list => {
+                    if (list.style.display === "none" || list.style.display === "") {
+                        list.style.display = "block";
+                        button.textContent = "Hide Features";
+                    } else {
+                        list.style.display = "none";
+                        button.textContent = "View All Features";
+                    }
+                });
+            }
+        </script>
+    </div>
     <!-- FAQ -->
 
     <!-- Contact -->
 
+    <!-- oUR SERVICES -->
+    <style>
+        /* Styling for the text */
+        .text-heading {
+            font-family: 'Inter', sans-serif;
+            /* Use Inter font */
+            font-weight: 700;
+            /* Bold weight */
+            font-size: 2.5rem;
+            /* Adjust size as needed */
+            color: #1A1A1A;
+            /* Dark navy or deep gray */
+
+            margin: 0;
+            /* Remove extra margins */
+        }
+
+        /* Heading Style */
+        .card-heading {
+            font-weight: 700;
+            /* Bold text */
+            font-size: 1.25rem;
+            /* Approximately 20px */
+            color: #1A1A1A;
+            /* Dark navy or deep gray */
+            margin: 0 0 8px 0;
+            /* Add spacing below */
+        }
+
+        /* Paragraph Style */
+        .card-description {
+            font-weight: 400;
+            /* Regular text */
+            font-size: 1rem;
+            /* Approximately 16px */
+            color: #6B6B6B;
+            /* Light gray text */
+            line-height: 1.5;
+            /* Comfortable line spacing */
+            margin: 0;
+            /* No extra margins */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .card {
+            transition: filter 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            filter: brightness(1.1);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <div class="text-center py-12">
+        <h1 class="text-heading ">
+            Transforming Businesses with Tailored Digital Solutions
+        </h1>
+        <p class="text-lg text-gray-600 mt-4">
+            Empowering your business with cutting-edge systems designed to streamline operations, enhance productivity,
+            and
+            accelerate growth.
+        </p>
+    </div>
+    <div class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 bg-gray-100 rounded-3xl">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-[#E8F5E3] p-6 rounded-xl text-center card  border border-[#C4E1B8]">
+                <img alt="Customer Relationship Management (CRM) example" class="mx-auto mb-4 rounded-lg" height="200"
+                    src="https://storage.googleapis.com/a1aa/image/PKAd4IvcTexUcSMsAXSdYJXVaOzRrMK4ViDNtA6o9meUeGynA.jpg"
+                    width="300" />
+                <!-- <h2 class="text-xl font-semibold mb-2"> -->
+                <h2 class="card-heading">
+                    CRM
+                </h2>
+                <p class="card-description">
+                    Elevate customer engagement with intuitive tools for tracking leads and fostering relationships.
+                </p>
+            </div>
+            <div class="bg-[#F8EDFB] p-6 rounded-xl text-center card border border-[#E0D4E5]">
+                <img alt="Enterprise Resource Planning (ERP) example" class="mx-auto mb-4 rounded-xl" height="200"
+                    src="https://storage.googleapis.com/a1aa/image/itAxhXeWfSrlPEWTIxKGlNyeHfBfq3GHwTamCc5rTlDPybIfE.jpg"
+                    width="300" />
+                <h2 class="card-heading mb-2">
+                    ERP
+                </h2>
+                <p class="card-description">
+                    Seamlessly integrate business processes like inventory, finance, and HR for efficient operations.
+                </p>
+            </div>
+            <div class="bg-[#DBF0FF] p-6 rounded-xl text-center card border border-gray-200">
+                <img alt="Content Management System (CMS) example" class="mx-auto mb-4 rounded-xl" height="200"
+                    src="https://storage.googleapis.com/a1aa/image/w1reIiZa1CWNe0SJnLzYluO0nHv2yf4jotbmHN5uZIDm8GynA.jpg"
+                    width="300" />
+                <h2 class="card-heading mb-2">
+                    CMS
+                </h2>
+                <p class="card-description">
+                    Easily manage website content to keep your digital presence fresh and scalable.
+                </p>
+            </div>
+            <div class="bg-[#F0F1FF] p-6 rounded-xl text-center card border border-[#D1D3E8]"></div>
+            <img alt="E-Commerce Platforms example" class="mx-auto mb-4 rounded-xl" height="200"
+                src="https://storage.googleapis.com/a1aa/image/cdzyAWNznuaAD5dlPDevSH0FuVHjMx3acxPCjTvEPteQeGynA.jpg"
+                width="300" />
+            <h2 class="card-heading mb-2">
+                E-Commerce
+            </h2>
+            <p class="card-description">
+                Build a thriving online store with smooth checkout and inventory management.
+            </p>
+        </div>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-8 hidden" id="additionalServices">
+        <div class="bg-green-50 p-6 rounded-xl text-center card">
+            <img alt="Custom Business Applications example" class="mx-auto mb-4 rounded-xl" height="200"
+                src="https://storage.googleapis.com/a1aa/image/jZRscAVDq570IxUHfqxe0kLXatn2S829ZsZdxxe2q4Fu8GynA.jpg"
+                width="300" />
+            <h2 class="card-heading mb-2">
+                Custom Business Applications
+            </h2>
+            <p class="card-description">
+                Simplify workflows and improve decision-making with tailored solutions.
+            </p>
+        </div>
+        <div class="bg-purple-50 p-6 rounded-xl text-center card">
+            <img alt="Learning Management Systems (LMS) example" class="mx-auto mb-4 rounded-xl" height="200"
+                src="https://storage.googleapis.com/a1aa/image/qimuG25w6C5kMJnyoF1R2suDUyZjctuJCuNWf78MGNcMvh8JA.jpg"
+                width="300" />
+            <h2 class="card-heading mb-2">
+                LMS
+            </h2>
+            <p class="card-description">
+                Manage and deliver educational content seamlessly for schools, training, or online courses.
+            </p>
+        </div>
+        <div class="bg-blue-50 p-6 rounded-xl text-center card">
+            <img alt="Booking and Reservation Systems example" class="mx-auto mb-4 rounded-xl" height="200"
+                src="https://storage.googleapis.com/a1aa/image/xOORnuKDfxx9E6xEibV3yQhRVBBY6HNgKcZonINR03MLvh8JA.jpg"
+                width="300" />
+            <h2 class="card-heading mb-2">
+                Booking and Reservation Systems
+            </h2>
+            <p class="card-description">
+                Streamline booking processes for travel, hospitality, or appointments.
+            </p>
+        </div>
+        <div class="bg-purple-50 p-6 rounded-xl text-center card">
+            <img alt="Inventory Management Systems example" class="mx-auto mb-4 rounded-xl" height="200"
+                src="https://storage.googleapis.com/a1aa/image/ehX7pfGsKMoGNkhROrtbBp99kqfWcP5WZDkllahvOexW5NkPB.jpg"
+                width="300" />
+            <h2 class="card-heading mb-2">
+                Inventory Management Systems
+            </h2>
+            <p class="card-description">
+                Efficiently track and manage stock to minimize costs and maximize efficiency.
+            </p>
+        </div>
+    </div>
+    <div class="text-center mt-8">
+        <button class="bg-blue-400 text-white px-6 py-2 rounded-xl" id="viewAllServices">
+            View All Services
+        </button>
+    </div>
+    </div>
+    <script>
+        document.getElementById('viewAllServices').addEventListener('click', function () {
+            const additionalServices = document.getElementById('additionalServices');
+            additionalServices.classList.toggle('hidden');
+            if (additionalServices.classList.contains('hidden')) {
+                this.textContent = 'View All Services';
+            } else {
+                this.textContent = 'Hide';
+            }
+        });
+    </script>
     <!-- oUR SERVICES -->
 
     <!-- Why choose us -->
