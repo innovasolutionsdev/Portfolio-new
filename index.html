@@ -41,6 +41,11 @@
             const hiddenCards = document.querySelectorAll('.hidden-card');
             hiddenCards.forEach(card => {
                 card.classList.toggle('hidden');
+                if (card.classList.contains('hidden')) {
+                    this.textContent = 'View All';
+                } else {
+                    this.textContent = 'Hide';
+                }
             });
         }
     </script>
@@ -118,8 +123,11 @@
                 </button>
             </div>
             <div class="mt-4 flex items-center justify-center">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
-                    alt="Google G logo" class="mr-2" width="20" height="20">
+                <?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30px"
+                    height="30px" class="mr-2">
+                    <path
+                        d="M 15.003906 3 C 8.3749062 3 3 8.373 3 15 C 3 21.627 8.3749062 27 15.003906 27 C 25.013906 27 27.269078 17.707 26.330078 13 L 25 13 L 22.732422 13 L 15 13 L 15 17 L 22.738281 17 C 21.848702 20.448251 18.725955 23 15 23 C 10.582 23 7 19.418 7 15 C 7 10.582 10.582 7 15 7 C 17.009 7 18.839141 7.74575 20.244141 8.96875 L 23.085938 6.1289062 C 20.951937 4.1849063 18.116906 3 15.003906 3 z" />
+                </svg>
                 <i class="fas fa-star text-gray-900"></i>
                 <i class="fas fa-star text-gray-900"></i>
                 <i class="fas fa-star text-gray-900"></i>
@@ -134,21 +142,10 @@
 
     <section class="py-24 ">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div class="mb-12">
-                <h2 class="font-manrope text-5xl text-center font-bold text-gray-900 mb-4">Choose your plan </h2>
-                <p class="text-gray-500 text-center leading-6 mb-9">7 Days free trial. No credit card required.</p>
-                <!--Switch-->
-                <div class="flex justify-center items-center">
-                    <label class="min-w-[3.5rem] text-xl relative text-gray-900 mr-4 font-medium">Bill Monthly</label>
-                    <input type="checkbox" id="basic-with-description"
-                        class="relative shrink-0 w-11 h-6 p-0.5 bg-indigo-100 checked:bg-none checked:bg-indigo-100 rounded-full cursor-pointer transition-colors ease-in-out duration-200  focus:border-blue-600  appearance-none 
+            <div class="mb-8">
+                <h2 class="font-manrope text-5xl text-center font-bold text-gray-900 mb-3">Choose your plan </h2>
+                <p class="text-gray-500 text-center leading-6">7 Days free trial. No credit card required.</p>
 
-                        before:inline-block before:w-5 before:h-5 before:bg-indigo-600 checked:before:bg-indigo-600 before:translate-x-0 checked:before:translate-x-full before:shadow before:rounded-full before:transform  before:transition before:ease-in-out before:duration-200 ">
-                    <label class="relative min-w-[3.5rem] font-medium text-xl text-gray-500 ml-4 ">
-                        Bill Yearly
-                    </label>
-                </div>
-                <!--Switch End-->
             </div>
             <!--Grid-->
             <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-8 lg:space-y-0 lg:items-center">
@@ -161,7 +158,7 @@
                         <span class="text-xl text-gray-500 ">/ month</span>
                     </div>
                     <!--List-->
-                    <ul class="mb-12 space-y-6 text-left text-lg text-gray-500">
+                    <ul class="mb-8 space-y-2 text-left text-lg text-gray-500">
                         <li class="flex items-center space-x-4">
                             <!-- Icon -->
                             <svg class="flex-shrink-0 w-6 h-6 text-indigo-600" viewBox="0 0 30 30" fill="none"
@@ -219,14 +216,14 @@
                         class="uppercase bg-gradient-to-r from-indigo-600 to-violet-600 rounded-t-2xl p-3 text-center text-white">
                         MOST POPULAR
                     </div>
-                    <div class="p-6 xl:py-9 xl:px-12">
+                    <div class="p-6 xl:py-8 xl:px-12">
                         <h3 class="font-manrope text-2xl font-bold mb-3">Premium</h3>
                         <div class="flex items-center mb-6">
                             <span class="font-manrope mr-2 text-6xl font-semibold text-indigo-600">15,500</span>
                             <span class="text-xl text-gray-500 ">/ month</span>
                         </div>
                         <!--List-->
-                        <ul class="mb-12 space-y-6 text-left text-lg ">
+                        <ul class="mb-8 space-y-2 text-left text-lg ">
                             <li class="flex items-center space-x-4">
                                 <!-- Icon -->
                                 <svg class="flex-shrink-0 w-6 h-6 text-indigo-600" viewBox="0 0 30 30" fill="none"
@@ -310,7 +307,7 @@
                         <span class="text-xl text-gray-500 ">/ month</span>
                     </div>
                     <!--List-->
-                    <ul class="mb-12 space-y-6 text-left text-lg text-gray-500">
+                    <ul class="mb-8 space-y-2 text-left text-lg text-gray-500">
                         <li class="flex items-center space-x-4">
                             <!-- Icon -->
                             <svg class="flex-shrink-0 w-6 h-6 text-indigo-600" viewBox="0 0 30 30" fill="none"
@@ -402,102 +399,101 @@
         <!-- Sales Card -->
         <div class="bg-green-100 rounded-3xl p-6 text-center w-full md:w-1/4">
             <img alt="A person in a video call for sales" class="rounded-lg mb-4 mx-auto" height="150"
-                src="https://storage.googleapis.com/a1aa/image/EgiTeCjinv1hOiqBvdMCFMxbIfFRJgF4W0jeZbgsfiDKpMkPB.jpg"
-                width="225" />
+                src="images/sem.png" width="225" />
             <h2 class="text-xl font-semibold mb-2 text-green-800">
-                Sales
+                Small and Medium Enterprises (SMEs)
             </h2>
             <p class="text-green-700 text-sm leading-relaxed">
-                Personalize your pitch with video outreach to close more deals.
+                Empower local businesses with modern websites to reach broader audiences and grow their digital
+                presence.
             </p>
         </div>
         <!-- Engineering Card -->
         <div class="bg-purple-100 rounded-3xl p-6 text-center w-full md:w-1/4">
             <img alt="A person in a video call for engineering" class="rounded-lg mb-4 mx-auto" height="150"
-                src="https://storage.googleapis.com/a1aa/image/UYAdalZoFqLqIN9U4Mh5HzLNeMME0GtKfzdXby567pWPKD5TA.jpg"
-                width="225" />
+                src="images/travel.jpg" width="225" />
             <h2 class="text-xl font-semibold mb-2 text-purple-800">
-                Engineering
+                Tourism and Travel
             </h2>
             <p class="text-purple-700 text-sm leading-relaxed">
-                Add visual context to your code to accelerate your sprints.
+                Create interactive platforms to showcase Sri Lanka's rich cultural and natural attractions for global
+                travelers.
             </p>
         </div>
         <!-- Customer Support Card -->
         <div class="bg-blue-100 rounded-3xl p-6 text-center w-full md:w-1/4">
             <img alt="A person in a video call for customer support" class="rounded-lg mb-4 mx-auto" height="150"
-                src="https://storage.googleapis.com/a1aa/image/AGEgROGSUeymdyHGezVDPrHxoMTEp7bpK3P9X9hqfLunUGynA.jpg"
-                width="225" />
+                src="images/e_commerce.jpg" width="225" />
             <h2 class="text-xl font-semibold mb-2 text-blue-800">
-                Customer support
+                E-commerce
             </h2>
             <p class="text-blue-700 text-sm leading-relaxed">
-                Troubleshoot over video to reach resolutions faster.
+                Provide tailored online shopping solutions to connect local sellers with customers nationwide.
             </p>
         </div>
         <!-- Design Card -->
         <div class="bg-indigo-100 rounded-3xl p-6 text-center w-full md:w-1/4">
             <img alt="A person in a video call for design" class="rounded-lg mb-4 mx-auto" height="150"
-                src="https://storage.googleapis.com/a1aa/image/hV50l3yrXu5LOttHozl1E2svAqTNHV80fD5vHelUffIEpMkPB.jpg"
-                width="225" />
+                src="images/lms.jpg" width="225" />
             <h2 class="text-xl font-semibold mb-2 text-indigo-800">
-                Design
+                Education
             </h2>
             <p class="text-indigo-700 text-sm leading-relaxed">
-                Share ideas and provide feedback over video to enhance designs.
+                Develop e-learning platforms to enhance accessibility and improve the quality of education across the
+                island.
             </p>
         </div>
     </div>
     <div
-        class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-8 px-4 hidden-card hidden">
+        class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-8 px-4 pt-8 hidden-card hidden">
         <!-- Marketing Card -->
         <div class="bg-yellow-100 rounded-3xl p-6 text-center w-full md:w-1/4">
             <img alt="A person in a video call for marketing" class="rounded-lg mb-4 mx-auto" height="150"
-                src="https://storage.googleapis.com/a1aa/image/marketing.jpg" width="225" />
+                src="images/hospitality.webp" width="225" />
             <h2 class="text-xl font-semibold mb-2 text-yellow-800">
-                Marketing
+                Hospitality
             </h2>
             <p class="text-yellow-700 text-sm leading-relaxed">
-                Create engaging video content to boost your marketing efforts.
+                Design websites for hotels and restaurants to improve reservations and showcase their unique offerings.
             </p>
         </div>
         <!-- HR Card -->
         <div class="bg-red-100 rounded-3xl p-6 text-center w-full md:w-1/4">
             <img alt="A person in a video call for HR" class="rounded-lg mb-4 mx-auto" height="150"
-                src="https://storage.googleapis.com/a1aa/image/hr.jpg" width="225" />
+                src="images/agro.jpg" width="225" />
             <h2 class="text-xl font-semibold mb-2 text-red-800">
-                HR
+                Agriculture
             </h2>
             <p class="text-red-700 text-sm leading-relaxed">
-                Use video to streamline your HR processes and improve communication.
+                Support farmers and agri-businesses with digital tools to market produce and access resources.
             </p>
         </div>
         <!-- Education Card -->
         <div class="bg-teal-100 rounded-3xl p-6 text-center w-full md:w-1/4">
             <img alt="A person in a video call for education" class="rounded-lg mb-4 mx-auto" height="150"
-                src="https://storage.googleapis.com/a1aa/image/education.jpg" width="225" />
+                src="images/gym.webp" width="225" />
             <h2 class="text-xl font-semibold mb-2 text-teal-800">
-                Education
+                Gym and Fitness
             </h2>
             <p class="text-teal-700 text-sm leading-relaxed">
-                Enhance learning experiences with interactive video content.
+                Build websites for gyms and fitness centers to manage memberships and promote healthy lifestyles.
             </p>
         </div>
         <!-- Healthcare Card -->
         <div class="bg-pink-100 rounded-3xl p-6 text-center w-full md:w-1/4">
             <img alt="A person in a video call for healthcare" class="rounded-lg mb-4 mx-auto" height="150"
-                src="https://storage.googleapis.com/a1aa/image/healthcare.jpg" width="225" />
+                src="images/event.jpg" width="225" />
             <h2 class="text-xl font-semibold mb-2 text-pink-800">
-                Healthcare
+                Event Management
             </h2>
             <p class="text-pink-700 text-sm leading-relaxed">
-                Improve patient care with personalized video consultations.
+                Offer sleek solutions for event organizers to streamline bookings and showcase services.
             </p>
         </div>
     </div>
-    <div class="text-center mt-8">
+    <div class="text-center mt-8" class="textContent">
         <button class="bg-blue-500 text-white px-4 py-2 rounded-full" onclick="toggleCards()">
-            View All
+            View more
         </button>
     </div>
 
@@ -972,119 +968,123 @@
 
     <!-- Footer -->
 
-    <footer>
+    <footer class="w-full">
 
-        <div class="container mx-0 px-4 bg-gray-100 w-full">
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-8 text-gray-600">
-                <div>
-                    <h3 class="font-bold text-gray-800 mb-4">
-                        Product
-                    </h3>
-                    <ul>
-                        <li class="mb-2">
-                            <a class="hover:underline" href="#">
-                                Features
-                            </a>
-                        </li>
-                        <li class="mb-2">
-                            <a class="hover:underline" href="#">
-                                Why Draftbit
-                            </a>
-                        </li>
-                        <li class="mb-2">
-                            <a class="hover:underline" href="#">
-                                Pricing
-                            </a>
-                        </li>
-                        <li class="mb-2">
-                            <a class="hover:underline" href="#">
-                                Experts
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="font-bold text-gray-800 mb-4">
-                        Company
-                    </h3>
-                    <ul>
-                        <li class="mb-2">
-                            <a class="hover:underline" href="#">
-                                About
-                            </a>
-                        </li>
-                        <li class="mb-2">
-                            <a class="hover:underline" href="#">
-                                Jobs
-                            </a>
-                        </li>
-                        <li class="mb-2">
-                            <a class="hover:underline" href="#">
-                                Blog
-                            </a>
-                        </li>
-                        <li class="mb-2">
-                            <a class="hover:underline" href="#">
-                                Terms
-                            </a>
-                        </li>
-                        <li class="mb-2">
-                            <a class="hover:underline" href="#">
-                                Privacy
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="font-bold text-gray-800 mb-4">
-                        Support
-                    </h3>
-                    <ul>
-                        <li class="mb-2">
-                            <a class="hover:underline" href="#">
-                                Community
-                            </a>
-                        </li>
-                        <li class="mb-2">
-                            <a class="hover:underline" href="#">
-                                Resources
-                            </a>
-                        </li>
-                        <li class="mb-2">
-                            <a class="hover:underline" href="#">
-                                Docs
-                            </a>
-                        </li>
-                        <li class="mb-2">
-                            <a class="hover:underline" href="#">
-                                Affiliates
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="font-bold text-gray-800 mb-4">
-                        Get started
-                    </h3>
-                    <ul>
-                        <li class="mb-2">
-                            <a class="hover:underline" href="#">
-                                Create Account
-                            </a>
-                        </li>
-                        <li class="mb-2">
-                            <a class="hover:underline" href="#">
-                                Sign In
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+        <div class="mx-0 px-4 bg-gray-100 w-full mt-[100px]">
+            <div class="flex justify-center items-center h-full w-full py-8">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-16 text-gray-600 text-center">
+                    <div>
+                        <h3 class="font-bold text-gray-800 mb-4">
+                            Product
+                        </h3>
+                        <ul>
+                            <li class="mb-2">
+                                <a class="hover:underline" href="#">
+                                    Features
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="hover:underline" href="#">
+                                    Why Draftbit
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="hover:underline" href="#">
+                                    Pricing
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="hover:underline" href="#">
+                                    Experts
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-800 mb-4">
+                            Quick Links
+                        </h3>
+                        <ul>
+                            <li class="mb-2">
+                                <a class="hover:underline" href="#">
+                                    Products
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="hover:underline" href="#">
+                                    Pricing
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="hover:underline" href="#">
+                                    Our Domains
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="hover:underline" href="#">
+                                    Our Service
 
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="hover:underline" href="#">
+                                    FAQ
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-800 mb-4">
+                            Support
+                        </h3>
+                        <ul>
+                            <li class="mb-2">
+                                <a class="hover:underline" href="#">
+                                    Community
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="hover:underline" href="#">
+                                    Resources
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="hover:underline" href="#">
+                                    Docs
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="hover:underline" href="#">
+                                    Affiliates
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-800 mb-4">
+                            Get started
+                        </h3>
+                        <ul>
+                            <li class="mb-2">
+                                <a class="hover:underline" href="#">
+                                    Create Account
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="hover:underline" href="#">
+                                    Sign In
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+
+
         </div>
 
 
-        <div class="h-[200px] flex justify-between items-top p-4">
+        <div class="h-[120px] flex justify-between items-top p-3">
             <div class="flex space-x-4 pt-8">
                 <a class="bg-purple-100 p-2 rounded-full h-fit" href="#">
                     <i class="fab fa-twitter text-gray-600 icon-hover"></i>
