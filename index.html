@@ -41,12 +41,16 @@
             const hiddenCards = document.querySelectorAll('.hidden-card');
             hiddenCards.forEach(card => {
                 card.classList.toggle('hidden');
-                if (card.classList.contains('hidden')) {
-                    this.textContent = 'View All';
-                } else {
-                    this.textContent = 'Hide';
-                }
             });
+
+
+            // Change button text
+            const toggleButton = document.getElementById('toggleButton');
+            if (toggleButton.innerText === "View more") {
+                toggleButton.innerText = "Hide";
+            } else {
+                toggleButton.innerText = "View more";
+            }
         }
     </script>
 </head>
@@ -389,115 +393,120 @@
 
 
     <!-- Domains -->
+    <div class="mx-20">
+        <div class="text-center py-12">
+            <h1 class="text-4xl font-semibold">
+                Our Domains
+            </h1>
+        </div>
+        <div class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-8 px-4">
+            <!-- Sales Card -->
+            <div class="bg-green-100 rounded-3xl p-6 text-center w-full md:w-1/4">
+                <img alt="A person in a video call for sales" class="rounded-lg mb-4 mx-auto" src="images/sem.png"
+                    style="width: 225px; height: 150px;" />
+                <h2 class="text-xl font-semibold mb-2 text-green-800">
+                    SMEs
+                </h2>
+                <p class="text-green-700 text-sm leading-relaxed">
+                    Empower local businesses with modern websites to reach broader audiences and grow their digital
+                    presence.
+                </p>
+            </div>
+            <!-- Engineering Card -->
+            <div class="bg-purple-100 rounded-3xl p-6 text-center w-full md:w-1/4">
+                <img alt="A person in a video call for engineering" class="rounded-lg mb-4 mx-auto"
+                    src="images/travel.jpg" style="width: 225px; height: 150px;" />
+                <h2 class="text-xl font-semibold mb-2 text-purple-800">
+                    Tourism and Travel
+                </h2>
+                <p class="text-purple-700 text-sm leading-relaxed">
+                    Create interactive platforms to showcase Sri Lanka's rich cultural and natural attractions for
+                    global
+                    travelers.
+                </p>
+            </div>
+            <!-- Customer Support Card -->
+            <div class="bg-blue-100 rounded-3xl p-6 text-center w-full md:w-1/4">
+                <img alt="A person in a video call for customer support" class="rounded-lg mb-4 mx-auto"
+                    src="images/e_commerce.jpg" style="width: 225px; height: 150px;" />
+                <h2 class="text-xl font-semibold mb-2 text-blue-800">
+                    E-commerce
+                </h2>
+                <p class="text-blue-700 text-sm leading-relaxed">
 
-    <div class="text-center py-12">
-        <h1 class="text-4xl font-semibold">
-            Our Domains
-        </h1>
-    </div>
-    <div class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-8 px-4">
-        <!-- Sales Card -->
-        <div class="bg-green-100 rounded-3xl p-6 text-center w-full md:w-1/4">
-            <img alt="A person in a video call for sales" class="rounded-lg mb-4 mx-auto" height="150"
-                src="images/sem.png" width="225" />
-            <h2 class="text-xl font-semibold mb-2 text-green-800">
-                Small and Medium Enterprises (SMEs)
-            </h2>
-            <p class="text-green-700 text-sm leading-relaxed">
-                Empower local businesses with modern websites to reach broader audiences and grow their digital
-                presence.
-            </p>
+                    Provide customized online shopping platforms to connect local sellers with a broader audience across
+                    the nation.
+                </p>
+            </div>
+            <!-- Design Card -->
+            <div class="bg-indigo-100 rounded-3xl p-6 text-center w-full md:w-1/4">
+                <img alt="A person in a video call for design" class="rounded-lg mb-4 mx-auto" src="images/lms.jpg"
+                    style="width: 225px; height: 150px;" />
+                <h2 class="text-xl font-semibold mb-2 text-indigo-800">
+                    Education
+                </h2>
+                <p class="text-indigo-700 text-sm leading-relaxed">
+                    Develop e-learning platforms to enhance accessibility and improve the quality of education across
+                    the
+                    island.
+                </p>
+            </div>
         </div>
-        <!-- Engineering Card -->
-        <div class="bg-purple-100 rounded-3xl p-6 text-center w-full md:w-1/4">
-            <img alt="A person in a video call for engineering" class="rounded-lg mb-4 mx-auto" height="150"
-                src="images/travel.jpg" width="225" />
-            <h2 class="text-xl font-semibold mb-2 text-purple-800">
-                Tourism and Travel
-            </h2>
-            <p class="text-purple-700 text-sm leading-relaxed">
-                Create interactive platforms to showcase Sri Lanka's rich cultural and natural attractions for global
-                travelers.
-            </p>
+        <div
+            class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-8 px-4 pt-8 hidden-card hidden">
+            <!-- Marketing Card -->
+            <div class="bg-yellow-100 rounded-3xl p-6 text-center w-full md:w-1/4">
+                <img alt="A person in a video call for marketing" class="rounded-lg mb-4 mx-auto"
+                    src="images/hospitality.webp" style="width: 225px; height: 150px;" />
+                <h2 class="text-xl font-semibold mb-2 text-yellow-800">
+                    Hospitality
+                </h2>
+                <p class="text-yellow-700 text-sm leading-relaxed">
+                    Design websites for hotels and restaurants to improve reservations and showcase their unique
+                    offerings.
+                </p>
+            </div>
+            <!-- HR Card -->
+            <div class="bg-red-100 rounded-3xl p-6 text-center w-full md:w-1/4">
+                <img alt="A person in a video call for HR" class="rounded-lg mb-4 mx-auto" src="images/agro.jpg"
+                    style="width: 225px; height: 150px;" />
+                <h2 class="text-xl font-semibold mb-2 text-red-800">
+                    Agriculture
+                </h2>
+                <p class="text-red-700 text-sm leading-relaxed">
+                    Support farmers and agri-businesses with digital tools to market produce and access resources.
+                </p>
+            </div>
+            <!-- Education Card -->
+            <div class="bg-teal-100 rounded-3xl p-6 text-center w-full md:w-1/4">
+                <img alt="A person in a video call for education" class="rounded-lg mb-4 mx-auto" src="images/gym.webp"
+                    style="width: 225px; height: 150px;" />
+                <h2 class="text-xl font-semibold mb-2 text-teal-800">
+                    Gym and Fitness
+                </h2>
+                <p class="text-teal-700 text-sm leading-relaxed">
+                    Build websites for gyms and fitness centers to manage memberships and promote healthy lifestyles.
+                </p>
+            </div>
+            <!-- Healthcare Card -->
+            <div class="bg-pink-100 rounded-3xl p-6 text-center w-full md:w-1/4">
+                <img alt="A person in a video call for healthcare" class="rounded-lg mb-4 mx-auto"
+                    src="images/event.jpg" style="width: 225px; height: 150px;" />
+                <h2 class="text-xl font-semibold mb-2 text-pink-800">
+                    Event Management
+                </h2>
+                <p class="text-pink-700 text-sm leading-relaxed">
+                    Offer sleek solutions for event organizers to streamline bookings and showcase services.
+                </p>
+            </div>
         </div>
-        <!-- Customer Support Card -->
-        <div class="bg-blue-100 rounded-3xl p-6 text-center w-full md:w-1/4">
-            <img alt="A person in a video call for customer support" class="rounded-lg mb-4 mx-auto" height="150"
-                src="images/e_commerce.jpg" width="225" />
-            <h2 class="text-xl font-semibold mb-2 text-blue-800">
-                E-commerce
-            </h2>
-            <p class="text-blue-700 text-sm leading-relaxed">
-                Provide tailored online shopping solutions to connect local sellers with customers nationwide.
-            </p>
+        <div class="text-center mt-8" class="textContent">
+            <button id="toggleButton" class="bg-blue-500 text-white px-4 py-2 rounded-full" onclick="toggleCards()">
+                View more
+            </button>
         </div>
-        <!-- Design Card -->
-        <div class="bg-indigo-100 rounded-3xl p-6 text-center w-full md:w-1/4">
-            <img alt="A person in a video call for design" class="rounded-lg mb-4 mx-auto" height="150"
-                src="images/lms.jpg" width="225" />
-            <h2 class="text-xl font-semibold mb-2 text-indigo-800">
-                Education
-            </h2>
-            <p class="text-indigo-700 text-sm leading-relaxed">
-                Develop e-learning platforms to enhance accessibility and improve the quality of education across the
-                island.
-            </p>
-        </div>
-    </div>
-    <div
-        class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-8 px-4 pt-8 hidden-card hidden">
-        <!-- Marketing Card -->
-        <div class="bg-yellow-100 rounded-3xl p-6 text-center w-full md:w-1/4">
-            <img alt="A person in a video call for marketing" class="rounded-lg mb-4 mx-auto" height="150"
-                src="images/hospitality.webp" width="225" />
-            <h2 class="text-xl font-semibold mb-2 text-yellow-800">
-                Hospitality
-            </h2>
-            <p class="text-yellow-700 text-sm leading-relaxed">
-                Design websites for hotels and restaurants to improve reservations and showcase their unique offerings.
-            </p>
-        </div>
-        <!-- HR Card -->
-        <div class="bg-red-100 rounded-3xl p-6 text-center w-full md:w-1/4">
-            <img alt="A person in a video call for HR" class="rounded-lg mb-4 mx-auto" height="150"
-                src="images/agro.jpg" width="225" />
-            <h2 class="text-xl font-semibold mb-2 text-red-800">
-                Agriculture
-            </h2>
-            <p class="text-red-700 text-sm leading-relaxed">
-                Support farmers and agri-businesses with digital tools to market produce and access resources.
-            </p>
-        </div>
-        <!-- Education Card -->
-        <div class="bg-teal-100 rounded-3xl p-6 text-center w-full md:w-1/4">
-            <img alt="A person in a video call for education" class="rounded-lg mb-4 mx-auto" height="150"
-                src="images/gym.webp" width="225" />
-            <h2 class="text-xl font-semibold mb-2 text-teal-800">
-                Gym and Fitness
-            </h2>
-            <p class="text-teal-700 text-sm leading-relaxed">
-                Build websites for gyms and fitness centers to manage memberships and promote healthy lifestyles.
-            </p>
-        </div>
-        <!-- Healthcare Card -->
-        <div class="bg-pink-100 rounded-3xl p-6 text-center w-full md:w-1/4">
-            <img alt="A person in a video call for healthcare" class="rounded-lg mb-4 mx-auto" height="150"
-                src="images/event.jpg" width="225" />
-            <h2 class="text-xl font-semibold mb-2 text-pink-800">
-                Event Management
-            </h2>
-            <p class="text-pink-700 text-sm leading-relaxed">
-                Offer sleek solutions for event organizers to streamline bookings and showcase services.
-            </p>
-        </div>
-    </div>
-    <div class="text-center mt-8" class="textContent">
-        <button class="bg-blue-500 text-white px-4 py-2 rounded-full" onclick="toggleCards()">
-            View more
-        </button>
-    </div>
 
-
+    </div>
 
 
 
@@ -565,12 +574,10 @@
     </style>
     <div class="text-center py-12">
         <h1 class="text-heading ">
-            Transforming Businesses with Tailored Digital Solutions
+            Transforming Businesses
         </h1>
         <p class="text-lg text-gray-600 mt-4">
-            Empowering your business with cutting-edge systems designed to streamline operations, enhance productivity,
-            and
-            accelerate growth.
+            Empowering your business with cutting-edge systems designed to .
         </p>
     </div>
     <div class="bg-gray-100 flex items-center justify-center min-h-screen">
@@ -799,10 +806,17 @@
     <style>
         /* Styling for the text */
         .text-heading {
-            font-family: 'Inter', sans-serif;
-            /* Use Inter font */
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            /* Common fonts like in the image */
             font-weight: 700;
-            /* Bold weight */
+            /* Medium weight for balanced boldness */
+            font-size: 2rem;
+            /* Adjust size to match */
+            color: #1c1e21;
+            /* Dark gray text color */
+            letter-spacing: 0;
+            /* No extra spacing */
+            line-height: 1.2;
             font-size: 2.5rem;
             /* Adjust size as needed */
             color: #1A1A1A;
@@ -1162,7 +1176,8 @@
                     <div class="w-1/2">
                         <h3 class="text-lg font-bold text-gray-800 mb-4">Customized Solutions</h3>
                         <p class="text-gray-600 mb-6">
-                            We don’t believe in one-size-fits-all. Every website we develop is tailored to meet your specific business needs,
+                            We don’t believe in one-size-fits-all. Every website we develop is tailored to meet your
+                            specific business needs,
                             ensuring a perfect fit for your goals.
                         </p>
                     </div>
@@ -1180,11 +1195,13 @@
                     <div class="w-1/2">
                         <h3 class="text-lg font-bold text-gray-800 mb-4">Expert Team</h3>
                         <p class="text-gray-600 mb-6">
-                            Our team of experienced developers, designers, and strategists work collaboratively to deliver cutting-edge solutions.
+                            Our team of experienced developers, designers, and strategists work collaboratively to
+                            deliver cutting-edge solutions.
                         </p>
                     </div>
                     <div class="w-1/2">
-                        <img src="https://via.placeholder.com/300x240" alt="Progress Chart Example" class="rounded-lg" />
+                        <img src="https://via.placeholder.com/300x240" alt="Progress Chart Example"
+                            class="rounded-lg" />
                     </div>
                 </div>
             </div>
@@ -1199,27 +1216,31 @@
                     <div class="w-1/2">
                         <h3 class="text-lg font-bold text-gray-800 mb-4">Fast Turnaround Time</h3>
                         <p class="text-gray-600 mb-6">
-                            We prioritize efficiency without compromising quality, ensuring your project is delivered on time.
+                            We prioritize efficiency without compromising quality, ensuring your project is delivered on
+                            time.
                         </p>
                     </div>
                     <div class="w-1/2">
-                        <img src="https://via.placeholder.com/300x240" alt="Progress Chart Example" class="rounded-lg" />
+                        <img src="https://via.placeholder.com/300x240" alt="Progress Chart Example"
+                            class="rounded-lg" />
                     </div>
                 </div>
             </div>
             <!-- Left Card (2/3 width on large screens) -->
             <div class="lg:col-span-5 bg-yellow-50 p-8 rounded-lg shadow-md">
-            
+
                 <div class="flex gap-4">
                     <!-- Example Content for Left Card -->
                     <div class="w-1/2">
                         <h3 class="text-lg font-bold text-gray-800 mb-4">Ongoing Support</h3>
                         <p class="text-gray-600 mb-6">
-                            Our job doesn’t end at delivery. We provide continuous support and maintenance to keep your website running smoothly.
+                            Our job doesn’t end at delivery. We provide continuous support and maintenance to keep your
+                            website running smoothly.
                         </p>
                     </div>
                     <div class="w-1/2">
-                        <img src="https://via.placeholder.com/300x170" alt="Progress Chart Example" class="rounded-lg" />
+                        <img src="https://via.placeholder.com/300x170" alt="Progress Chart Example"
+                            class="rounded-lg" />
                     </div>
                 </div>
             </div>
