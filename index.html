@@ -577,38 +577,36 @@
             accelerate growth.
         </p>
     </div>
-    <div class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-gray-100 flex items-center justify-center">
         <div class="flex flex-col gap-6 w-full max-w-6xl px-4">
             <!-- Basic Plan -->
-            <div class="bg-white rounded-lg shadow-lg p-6 w-full mb-2">
-                <div class="flex flex-col md:flex-row gap-16">
+            <div class="bg-white rounded-lg shadow-lg p-6 w-full ">
+                <div class="flex flex-col md:flex-row gap-4 md:gap-16">
                     <div class="slideshow-container relative" id="slideshow-basic">
                         <div class="slideshow-slide active">
-                            <img alt="Screenshot of the Basic plan dashboard" height="100"
+                            <img alt="Screenshot of the Basic plan dashboard" height="150"
                                 src="https://storage.googleapis.com/a1aa/image/KBpUTMlqJJ4tLBCgwhSSn6tBcPOO8enzz4SpgLU1ip6Zij8JA.jpg"
                                 width="200" />
                         </div>
                         <div class="slideshow-slide">
-                            <img alt="Screenshot of the Basic plan analytics" height="184"
+                            <img alt="Screenshot of the Basic plan analytics" height="150"
                                 src="https://storage.googleapis.com/a1aa/image/vVafkVTyGLQOHS7A45ESWuCS2EWZfX8kRETEZ4GYBuAyEH5TA.jpg"
                                 width="200" />
                         </div>
                         <div class="slideshow-slide">
-                            <img alt="Screenshot of the Basic plan settings" height="184"
+                            <img alt="Screenshot of the Basic plan settings" height="150"
                                 src="https://storage.googleapis.com/a1aa/image/8qDZWUGNh442BJH6LynfSWYVA75A0PyBRz58TNHKZvmaij8JA.jpg"
                                 width="200" />
                         </div>
-                        <button
-                            class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-1"
+                        <button class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-1"
                             onclick="plusSlides(-1, 'slideshow-basic')">&#10094;</button>
-                        <button
-                            class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-1"
+                        <button class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-1"
                             onclick="plusSlides(1, 'slideshow-basic')">&#10095;</button>
                     </div>
                     <div class="text-center">
-                        <h2 class="font-bold mb-4">Comprehensive Gym Management System</h2>
+                        <h2 class="font-bold md:mb-6">Comprehensive Gym Management System</h2>
                         <div class="flex flex-col md:flex-row gap-16">
-
+                
                             <ul class="space-y-4 features-list" id="features-basic">
                                 <li class="flex items-center text-gray-700">
                                     <i class="fas fa-check-circle text-purple-600 mr-2">
@@ -655,24 +653,38 @@
                             </ul>
                             <button class="view-features-btn mt-6 bg-purple-600 text-white py-2 px-4 rounded-lg"
                                 onclick="toggleFeatures('basic', this)">
-                                View All Features
+                                View Features
                             </button>
-                            <div class="flex md:flex-col flex-row gap-6justify-center items-center">
-                                <div class="text-4xl font-bold text-purple-600 mt-4">
-                                    $80
-                                </div>
-                                <button class="mt-6 bg-purple-600 text-white py-2 px-4 rounded-lg">
-                                    Buy Now
-                                </button>
-                            </div>
+                            <!-- <div class="flex flex-col justify-center items-center">
+                                                <div class="text-sm font-semi text-purple-600 mt-4">
+                                                    Starting From Just
+                                                </div>
+                                                <div class="text-4xl font-bold text-purple-600 mt-4">
+                                                    $80
+                                                </div>
+                                                <button class="mt-6 bg-purple-600 text-white py-2 px-4 rounded-lg">
+                                                    Buy Now
+                                                </button>
+                                            </div> -->
                         </div>
                     </div>
-
+                    <div class="flex flex-col md:flex-col gap-6justify-center items-center">
+                        <div class="text-sm font-semi text-purple-600 md:mt-4">
+                            Starting From Just
+                        </div>
+                        <div class="text-4xl font-bold text-purple-600 mt-4">
+                            $80
+                        </div>
+                        <button class="mt-4 md:mt-6 bg-purple-600 text-white py-2 px-4 rounded-lg">
+                            Buy Now
+                        </button>
+                    </div>
+                
                 </div>
             </div>
             <!-- Advanced Plan -->
             <div class="bg-white rounded-lg shadow-lg p-6 w-full mb-6">
-                <div class="flex flex-col md:flex-row gap-16">
+                <div class="flex flex-col md:flex-row gap-4 md:gap-16">
                     <div class="slideshow-container relative" id="slideshow-basic">
                         <div class="slideshow-slide active">
                             <img alt="Screenshot of the Basic plan dashboard" height="150"
@@ -697,7 +709,7 @@
                             onclick="plusSlides(1, 'slideshow-basic')">&#10095;</button>
                     </div>
                     <div class="text-center">
-                        <h2 class="font-bold mb-4">Comprehensive Gym Management System</h2>
+                        <h2 class="font-bold md:mb-6">Comprehensive Gym Management System</h2>
                         <div class="flex flex-col md:flex-row gap-16">
 
                             <ul class="space-y-4 features-list" id="features-basic">
@@ -746,17 +758,31 @@
                             </ul>
                             <button class="view-features-btn mt-6 bg-purple-600 text-white py-2 px-4 rounded-lg"
                                 onclick="toggleFeatures('basic', this)">
-                                View All Features
+                                View Features
                             </button>
-                            <div class="flex flex-col justify-center items-center">
+                            <!-- <div class="flex flex-col justify-center items-center">
+                                <div class="text-sm font-semi text-purple-600 mt-4">
+                                    Starting From Just
+                                </div>
                                 <div class="text-4xl font-bold text-purple-600 mt-4">
                                     $80
                                 </div>
                                 <button class="mt-6 bg-purple-600 text-white py-2 px-4 rounded-lg">
                                     Buy Now
                                 </button>
-                            </div>
+                            </div> -->
                         </div>
+                    </div>
+                    <div class="flex flex-col md:flex-col gap-6justify-center items-center">
+                        <div class="text-sm font-semi text-purple-600 md:mt-4">
+                            Starting From Just
+                        </div>
+                        <div class="text-4xl font-bold text-purple-600 mt-4">
+                            $80
+                        </div>
+                        <button class="mt-4 md:mt-6 bg-purple-600 text-white py-2 px-4 rounded-lg">
+                            Buy Now
+                        </button>
                     </div>
 
                 </div>
@@ -1161,16 +1187,16 @@
             <!-- Left Card (2/3 width on large screens) -->
             <div class="lg:col-span-5 bg-green-50 p-8 rounded-lg shadow-md">
 
-                <div class="flex gap-4">
+                <div class="flex md:gap-4 flex-col md:flex-row">
                     <!-- Example Content for Left Card -->
-                    <div class="w-1/2">
+                    <div class="md:w-1/2">
                         <h3 class="text-lg font-bold text-gray-800 mb-4">Customized Solutions</h3>
                         <p class="text-gray-600 mb-6">
                             We don’t believe in one-size-fits-all. Every website we develop is tailored to meet your specific business needs,
                             ensuring a perfect fit for your goals.
                         </p>
                     </div>
-                    <div class="w-1/2">
+                    <div class="md:w-1/2">
                         <img src="https://via.placeholder.com/300x170" alt="Progress Chart Example"
                             class="rounded-lg" />
                     </div>
@@ -1179,15 +1205,15 @@
 
             <!-- Right Card (1/3 width on large screens) -->
             <div class="lg:col-span-4 bg-blue-50 p-6 rounded-lg shadow-md">
-                <div class="flex gap-4">
+                <div class="flex flex-col md:flex-row gap-4">
                     <!-- Example Content for Left Card -->
-                    <div class="w-1/2">
+                    <div class="md:w-1/2">
                         <h3 class="text-lg font-bold text-gray-800 mb-4">Expert Team</h3>
                         <p class="text-gray-600 mb-6">
                             Our team of experienced developers, designers, and strategists work collaboratively to deliver cutting-edge solutions.
                         </p>
                     </div>
-                    <div class="w-1/2">
+                    <div class="md:w-1/2">
                         <img src="https://via.placeholder.com/300x240" alt="Progress Chart Example" class="rounded-lg" />
                     </div>
                 </div>
@@ -1198,15 +1224,15 @@
 
             <!-- Right Card (1/3 width on large screens) -->
             <div class="lg:col-span-4 bg-red-100 p-6 rounded-lg shadow-md">
-                <div class="flex gap-4">
+                <div class="flex flex-col md:flex-row gap-4">
                     <!-- Example Content for Left Card -->
-                    <div class="w-1/2">
+                    <div class="md:w-1/2">
                         <h3 class="text-lg font-bold text-gray-800 mb-4">Fast Turnaround Time</h3>
                         <p class="text-gray-600 mb-6">
                             We prioritize efficiency without compromising quality, ensuring your project is delivered on time.
                         </p>
                     </div>
-                    <div class="w-1/2">
+                    <div class="md:w-1/2">
                         <img src="https://via.placeholder.com/300x240" alt="Progress Chart Example" class="rounded-lg" />
                     </div>
                 </div>
@@ -1214,15 +1240,15 @@
             <!-- Left Card (2/3 width on large screens) -->
             <div class="lg:col-span-5 bg-yellow-50 p-8 rounded-lg shadow-md">
             
-                <div class="flex gap-4">
+                <div class="flex flex-col md:flex-row gap-4">
                     <!-- Example Content for Left Card -->
-                    <div class="w-1/2">
+                    <div class="md:w-1/2">
                         <h3 class="text-lg font-bold text-gray-800 mb-4">Ongoing Support</h3>
                         <p class="text-gray-600 mb-6">
                             Our job doesn’t end at delivery. We provide continuous support and maintenance to keep your website running smoothly.
                         </p>
                     </div>
-                    <div class="w-1/2">
+                    <div class="md:w-1/2">
                         <img src="https://via.placeholder.com/300x170" alt="Progress Chart Example" class="rounded-lg" />
                     </div>
                 </div>
