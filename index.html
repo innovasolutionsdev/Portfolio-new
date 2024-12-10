@@ -563,6 +563,16 @@
             }
         }
     </style>
+    <div class="text-center py-12">
+        <h1 class="text-heading ">
+            Transforming Businesses with Tailored Digital Solutions
+        </h1>
+        <p class="text-lg text-gray-600 mt-4">
+            Empowering your business with cutting-edge systems designed to streamline operations, enhance productivity,
+            and
+            accelerate growth.
+        </p>
+    </div>
     <div class="bg-gray-100 flex items-center justify-center min-h-screen">
         <div class="flex flex-col gap-6 w-full max-w-6xl px-4">
             <!-- Basic Plan -->
@@ -837,11 +847,11 @@
         }
 
         .card:hover {
-            filter: brightness(1.1);
+            /* filter: brightness(1.1); */
             box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
         }
     </style>
-    <div class="text-center py-12">
+    <div class="text-center py-12 bg-gray-100">
         <h1 class="text-heading ">
             Transforming Businesses with Tailored Digital Solutions
         </h1>
@@ -851,9 +861,10 @@
             accelerate growth.
         </p>
     </div>
-    <div class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 bg-gray-100 rounded-3xl">
+    <div class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 ">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div class="bg-[#E8F5E3] p-6 rounded-xl text-center card  border border-[#C4E1B8]">
+            <div
+                class="bg-[#E8F5E3] p-6 rounded-xl text-center card border border-[#C4E1B8] hover:bg-[#C4E1B8] transition-colors duration-1000">
                 <img alt="Customer Relationship Management (CRM) example" class="mx-auto mb-4 rounded-lg" height="200"
                     src="https://storage.googleapis.com/a1aa/image/PKAd4IvcTexUcSMsAXSdYJXVaOzRrMK4ViDNtA6o9meUeGynA.jpg"
                     width="300" />
@@ -865,7 +876,10 @@
                     Elevate customer engagement with intuitive tools for tracking leads and fostering relationships.
                 </p>
             </div>
-            <div class="bg-[#F8EDFB] p-6 rounded-xl text-center card border border-[#E0D4E5]">
+
+
+            <div
+                class="bg-[#F8EDFB] p-6 rounded-xl text-center card border border-[#E0D4E5] hover:bg-[#E0D4E5] transition-colors duration-1000">
                 <img alt="Enterprise Resource Planning (ERP) example" class="mx-auto mb-4 rounded-xl" height="200"
                     src="https://storage.googleapis.com/a1aa/image/itAxhXeWfSrlPEWTIxKGlNyeHfBfq3GHwTamCc5rTlDPybIfE.jpg"
                     width="300" />
@@ -876,7 +890,8 @@
                     Seamlessly integrate business processes like inventory, finance, and HR for efficient operations.
                 </p>
             </div>
-            <div class="bg-[#DBF0FF] p-6 rounded-xl text-center card border border-gray-200">
+            <div
+                class="bg-[#DBF0FF] p-6 rounded-xl text-center card border border-[#B0D4FF] hover:bg-[#B0D4FF] transition-colors duration-1000">
                 <img alt="Content Management System (CMS) example" class="mx-auto mb-4 rounded-xl" height="200"
                     src="https://storage.googleapis.com/a1aa/image/w1reIiZa1CWNe0SJnLzYluO0nHv2yf4jotbmHN5uZIDm8GynA.jpg"
                     width="300" />
@@ -887,66 +902,74 @@
                     Easily manage website content to keep your digital presence fresh and scalable.
                 </p>
             </div>
-            <div class="bg-[#F0F1FF] p-6 rounded-xl text-center card border border-[#D1D3E8]"></div>
-            <img alt="E-Commerce Platforms example" class="mx-auto mb-4 rounded-xl" height="200"
-                src="https://storage.googleapis.com/a1aa/image/cdzyAWNznuaAD5dlPDevSH0FuVHjMx3acxPCjTvEPteQeGynA.jpg"
-                width="300" />
-            <h2 class="card-heading mb-2">
-                E-Commerce
-            </h2>
-            <p class="card-description">
-                Build a thriving online store with smooth checkout and inventory management.
-            </p>
+            <div
+                class="bg-[#F0F1FF] p-6 rounded-xl text-center card border border-[#D1D3E8] hover:bg-[#D1D3E8] transition-colors duration-1000">
+                <img alt="E-Commerce Platforms example" class="mx-auto mb-4 rounded-xl" height="200"
+                    src="https://storage.googleapis.com/a1aa/image/cdzyAWNznuaAD5dlPDevSH0FuVHjMx3acxPCjTvEPteQeGynA.jpg"
+                    width="300" />
+                <h2 class="card-heading mb-2">
+                    E-Commerce
+                </h2>
+                <p class="card-description">
+                    Build a thriving online store with smooth checkout and inventory management.
+                </p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-8 hidden" id="additionalServices">
+            <div
+                class="bg-green-50 p-6 rounded-xl text-center card border border-[#C4E1B8] hover:bg-[#C4E1B8] transition-colors duration-1000">
+                <img alt="Custom Business Applications example" class="mx-auto mb-4 rounded-xl" height="200"
+                    src="https://storage.googleapis.com/a1aa/image/jZRscAVDq570IxUHfqxe0kLXatn2S829ZsZdxxe2q4Fu8GynA.jpg"
+                    width="300" />
+                <h2 class="card-heading mb-2">
+                    Custom Business Applications
+                </h2>
+                <p class="card-description">
+                    Simplify workflows and improve decision-making with tailored solutions.
+                </p>
+            </div>
+            <div
+                class="bg-purple-50 p-6 rounded-xl text-center card border border-[#E0D4E5] hover:bg-[#E0D4E5] transition-colors duration-1000">
+                <img alt="Learning Management Systems (LMS) example" class="mx-auto mb-4 rounded-xl" height="200"
+                    src="https://storage.googleapis.com/a1aa/image/qimuG25w6C5kMJnyoF1R2suDUyZjctuJCuNWf78MGNcMvh8JA.jpg"
+                    width="300" />
+                <h2 class="card-heading mb-2">
+                    LMS
+                </h2>
+                <p class="card-description">
+                    Manage and deliver educational content seamlessly for schools, training, or online courses.
+                </p>
+            </div>
+            <div
+                class="bg-blue-50 p-6 rounded-xl text-center card border border-[#B0D4FF] hover:bg-[#B0D4FF] transition-colors duration-1000">
+                <img alt="Booking and Reservation Systems example" class="mx-auto mb-4 rounded-xl" height="200"
+                    src="https://storage.googleapis.com/a1aa/image/xOORnuKDfxx9E6xEibV3yQhRVBBY6HNgKcZonINR03MLvh8JA.jpg"
+                    width="300" />
+                <h2 class="card-heading mb-2">
+                    Booking and Reservation Systems
+                </h2>
+                <p class="card-description">
+                    Streamline booking processes for travel, hospitality, or appointments.
+                </p>
+            </div>
+            <div
+                class="bg-purple-50 p-6 rounded-xl text-center card border border-[#D1D3E8] hover:bg-[#D1D3E8] transition-colors duration-1000">
+                <img alt="Inventory Management Systems example" class="mx-auto mb-4 rounded-xl" height="200"
+                    src="https://storage.googleapis.com/a1aa/image/ehX7pfGsKMoGNkhROrtbBp99kqfWcP5WZDkllahvOexW5NkPB.jpg"
+                    width="300" />
+                <h2 class="card-heading mb-2">
+                    Inventory Management Systems
+                </h2>
+                <p class="card-description">
+                    Efficiently track and manage stock to minimize costs and maximize efficiency.
+                </p>
+            </div>
         </div>
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-8 hidden" id="additionalServices">
-        <div class="bg-green-50 p-6 rounded-xl text-center card">
-            <img alt="Custom Business Applications example" class="mx-auto mb-4 rounded-xl" height="200"
-                src="https://storage.googleapis.com/a1aa/image/jZRscAVDq570IxUHfqxe0kLXatn2S829ZsZdxxe2q4Fu8GynA.jpg"
-                width="300" />
-            <h2 class="card-heading mb-2">
-                Custom Business Applications
-            </h2>
-            <p class="card-description">
-                Simplify workflows and improve decision-making with tailored solutions.
-            </p>
-        </div>
-        <div class="bg-purple-50 p-6 rounded-xl text-center card">
-            <img alt="Learning Management Systems (LMS) example" class="mx-auto mb-4 rounded-xl" height="200"
-                src="https://storage.googleapis.com/a1aa/image/qimuG25w6C5kMJnyoF1R2suDUyZjctuJCuNWf78MGNcMvh8JA.jpg"
-                width="300" />
-            <h2 class="card-heading mb-2">
-                LMS
-            </h2>
-            <p class="card-description">
-                Manage and deliver educational content seamlessly for schools, training, or online courses.
-            </p>
-        </div>
-        <div class="bg-blue-50 p-6 rounded-xl text-center card">
-            <img alt="Booking and Reservation Systems example" class="mx-auto mb-4 rounded-xl" height="200"
-                src="https://storage.googleapis.com/a1aa/image/xOORnuKDfxx9E6xEibV3yQhRVBBY6HNgKcZonINR03MLvh8JA.jpg"
-                width="300" />
-            <h2 class="card-heading mb-2">
-                Booking and Reservation Systems
-            </h2>
-            <p class="card-description">
-                Streamline booking processes for travel, hospitality, or appointments.
-            </p>
-        </div>
-        <div class="bg-purple-50 p-6 rounded-xl text-center card">
-            <img alt="Inventory Management Systems example" class="mx-auto mb-4 rounded-xl" height="200"
-                src="https://storage.googleapis.com/a1aa/image/ehX7pfGsKMoGNkhROrtbBp99kqfWcP5WZDkllahvOexW5NkPB.jpg"
-                width="300" />
-            <h2 class="card-heading mb-2">
-                Inventory Management Systems
-            </h2>
-            <p class="card-description">
-                Efficiently track and manage stock to minimize costs and maximize efficiency.
-            </p>
-        </div>
-    </div>
-    <div class="text-center mt-8">
-        <button class="bg-blue-400 text-white px-6 py-2 rounded-xl" id="viewAllServices">
+
+    <div class="text-center mt-8 mb-4">
+        <button class="bg-blue-400 text-white px-6  py-2 rounded-xl" id="viewAllServices">
             View All Services
         </button>
     </div>
@@ -963,8 +986,345 @@
         });
     </script>
     <!-- oUR SERVICES -->
+    <!-- FAQ -->
+    <style>
+        .main-heading {
+            font-size: 2.5rem;
+            /* Adjust font size to match */
+            /*font-weight: 900;  Bold font for the main heading */
+            color: #2b2a2a;
+            /* Dark text color, adjust to match */
+            margin-bottom: 0.5rem;
+            /* Space below the heading */
+        }
+
+        .sub-heading {
+            font-size: 1rem;
+            /* Smaller font for subheading */
+            font-weight: 400;
+            /* Regular font weight for subheading */
+            color: #6B7280;
+            /* Subtle gray for text */
+            /* Ensure no extra margins */
+        }
+    </style>
+    <section class="py-24">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="mb-16">
+                <h2 class="main-heading   text-center font-bold   leading-[3.25rem]">
+                    All-In-One Business Software
+                </h2>
+                <p class="sub-heading  mt-4 text-center">
+                    Empowering your business with cutting-edge systems designed to streamline operations
+                </p>
+            </div>
+
+            <div class="accordion-group" data-accordion="default-accordion">
+                <div class="accordion border border-solid border-gray-300 p-4 rounded-xl accordion-active:bg-indigo-50 accordion-active:border-indigo-600 mb-8 lg:p-4"
+                    id="basic-heading-two-with-icon">
+                    <button
+                        class="accordion-toggle group inline-flex items-center justify-between text-left text-lg font-normal leading-8 text-gray-900 w-full transition duration-500 hover:text-indigo-600 accordion-active:font-medium accordion-active:text-indigo-600"
+                        aria-controls="basic-collapse-two-with-icon" aria-expanded="false">
+                        <h5>How do I update my billing information?</h5>
+                        <svg class="w-6 h-6 text-gray-900 transition duration-500 block accordion-active:text-indigo-600 accordion-active:hidden group-hover:text-indigo-600"
+                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 12H18M12 18V6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                        <svg class="w-6 h-6 text-gray-900 transition duration-500 hidden accordion-active:text-indigo-600 accordion-active:block group-hover:text-indigo-600"
+                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 12H18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                                stroke-linejoin="round">
+                            </path>
+                        </svg>
+                    </button>
+                    <div id="basic-collapse-two-with-icon" class="accordion-content w-full overflow-hidden pr-4 "
+                        aria-labelledby="basic-heading-two" style="max-height: 0;">
+                        <p class="text-base text-gray-900 font-normal leading-6 pt-4">
+                            To update your billing information, log in to your account, go to the 'Billing' section, and
+                            update your payment details. Save the changes to ensure your billing information is updated.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion border border-solid border-gray-300 p-4 rounded-xl accordion-active:bg-indigo-50 accordion-active:border-indigo-600 mb-8 lg:p-4"
+                    id="basic-heading-two-with-icon">
+                    <button
+                        class="accordion-toggle group inline-flex items-center justify-between text-left text-lg font-normal leading-8 text-gray-900 w-full transition duration-500 hover:text-indigo-600 accordion-active:font-medium accordion-active:text-indigo-600"
+                        aria-controls="basic-collapse-two-with-icon" aria-expanded="false">
+                        <h5>How do I update my billing information?</h5>
+                        <svg class="w-6 h-6 text-gray-900 transition duration-500 block accordion-active:text-indigo-600 accordion-active:hidden group-hover:text-indigo-600"
+                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 12H18M12 18V6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                        <svg class="w-6 h-6 text-gray-900 transition duration-500 hidden accordion-active:text-indigo-600 accordion-active:block group-hover:text-indigo-600"
+                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 12H18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                    </button>
+                    <div id="basic-collapse-two-with-icon" class="accordion-content w-full overflow-hidden pr-4"
+                        aria-labelledby="basic-heading-two" style="max-height: 0;">
+                        <p class="text-base text-gray-900 font-normal leading-6 pt-4">
+                            To update your billing information, log in to your account, go to the 'Billing' section, and
+                            update your payment details. Save the changes to ensure your billing information is updated.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion border border-solid border-gray-300 p-4 rounded-xl accordion-active:bg-indigo-50 accordion-active:border-indigo-600 mb-8 lg:p-4"
+                    id="basic-heading-three-with-icon">
+                    <button
+                        class="accordion-toggle group inline-flex items-center justify-between text-left text-lg font-normal leading-8 text-gray-900 w-full transition duration-500 hover:text-indigo-600 accordion-active:font-medium accordion-active:text-indigo-600"
+                        aria-controls="basic-collapse-three-with-icon" aria-expanded="false">
+                        <h5>How can I contact customer support?</h5>
+                        <svg class="w-6 h-6 text-gray-900 transition duration-500 block accordion-active:text-indigo-600 accordion-active:hidden group-hover:text-indigo-600"
+                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 12H18M12 18V6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                        <svg class="w-6 h-6 text-gray-900 transition duration-500 hidden accordion-active:text-indigo-600 accordion-active:block group-hover:text-indigo-600"
+                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 12H18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                    </button>
+                    <div id="basic-collapse-three-with-icon" class="accordion-content w-full overflow-hidden pr-4"
+                        aria-labelledby="basic-heading-three" style="max-height: 0;">
+                        <p class="text-base text-gray-900 font-normal leading-6 pt-4">
+                            To contact customer support, visit the 'Contact Us' page on our website and fill out the
+                            contact
+                            form. You can also reach us via email or phone as provided on the same page.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion border border-solid border-gray-300 p-4 rounded-xl accordion-active:bg-indigo-50 accordion-active:border-indigo-600 mb-8 lg:p-4"
+                    id="basic-heading-four-with-icon">
+                    <button
+                        class="accordion-toggle group inline-flex items-center justify-between text-left text-lg font-normal leading-8 text-gray-900 w-full transition duration-500 hover:text-indigo-600 accordion-active:font-medium accordion-active:text-indigo-600"
+                        aria-controls="basic-collapse-four-with-icon" aria-expanded="false">
+                        <h5>How do I delete my account?</h5>
+                        <svg class="w-6 h-6 text-gray-900 transition duration-500 block accordion-active:text-indigo-600 accordion-active:hidden group-hover:text-indigo-600"
+                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 12H18M12 18V6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                        <svg class="w-6 h-6 text-gray-900 transition duration-500 hidden accordion-active:text-indigo-600 accordion-active:block group-hover:text-indigo-600"
+                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 12H18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                    </button>
+                    <div id="basic-collapse-four-with-icon" class="accordion-content w-full overflow-hidden pr-4"
+                        aria-labelledby="basic-heading-four" style="max-height: 0;">
+                        <p class="text-base text-gray-900 font-normal leading-6 pt-4">
+                            To delete your account, log in to your account, go to the 'Account Settings' section, and
+                            click
+                            on 'Delete Account.' Follow the prompts to confirm the deletion of your account.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.querySelectorAll('.accordion-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const accordionContent = button.nextElementSibling;
+                button.classList.toggle('accordion-active');
+                if (button.classList.contains('accordion-active')) {
+                    accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+                    button.setAttribute('aria-expanded', 'true');
+                } else {
+                    accordionContent.style.maxHeight = 0;
+                    button.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+    </script>
 
     <!-- Why choose us -->
+    <div class="mb-6">
+        <h2 class="main-heading   text-center font-bold   leading-[3.25rem]">
+            All-In-One Business Software
+        </h2>
+        <p class="sub-heading  mt-4 text-center">
+            Empowering your business with cutting-edge systems designed to streamline operations
+        </p>
+    </div>
+    <div class="max-w-7xl mx-auto p-6  rounded-lg">
+        <div class="grid grid-cols-1 lg:grid-cols-9 gap-6">
+            <!-- Left Card (2/3 width on large screens) -->
+            <div class="lg:col-span-5 bg-green-50 p-8 rounded-lg shadow-md">
+
+                <div class="flex gap-4">
+                    <!-- Example Content for Left Card -->
+                    <div class="w-1/2">
+                        <h3 class="text-lg font-bold text-gray-800 mb-4">Customized Solutions</h3>
+                        <p class="text-gray-600 mb-6">
+                            We don’t believe in one-size-fits-all. Every website we develop is tailored to meet your specific business needs,
+                            ensuring a perfect fit for your goals.
+                        </p>
+                    </div>
+                    <div class="w-1/2">
+                        <img src="https://via.placeholder.com/300x170" alt="Progress Chart Example"
+                            class="rounded-lg" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Card (1/3 width on large screens) -->
+            <div class="lg:col-span-4 bg-blue-50 p-6 rounded-lg shadow-md">
+                <div class="flex gap-4">
+                    <!-- Example Content for Left Card -->
+                    <div class="w-1/2">
+                        <h3 class="text-lg font-bold text-gray-800 mb-4">Expert Team</h3>
+                        <p class="text-gray-600 mb-6">
+                            Our team of experienced developers, designers, and strategists work collaboratively to deliver cutting-edge solutions.
+                        </p>
+                    </div>
+                    <div class="w-1/2">
+                        <img src="https://via.placeholder.com/300x240" alt="Progress Chart Example" class="rounded-lg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-9 gap-6 mt-4">
+
+
+            <!-- Right Card (1/3 width on large screens) -->
+            <div class="lg:col-span-4 bg-red-100 p-6 rounded-lg shadow-md">
+                <div class="flex gap-4">
+                    <!-- Example Content for Left Card -->
+                    <div class="w-1/2">
+                        <h3 class="text-lg font-bold text-gray-800 mb-4">Fast Turnaround Time</h3>
+                        <p class="text-gray-600 mb-6">
+                            We prioritize efficiency without compromising quality, ensuring your project is delivered on time.
+                        </p>
+                    </div>
+                    <div class="w-1/2">
+                        <img src="https://via.placeholder.com/300x240" alt="Progress Chart Example" class="rounded-lg" />
+                    </div>
+                </div>
+            </div>
+            <!-- Left Card (2/3 width on large screens) -->
+            <div class="lg:col-span-5 bg-yellow-50 p-8 rounded-lg shadow-md">
+            
+                <div class="flex gap-4">
+                    <!-- Example Content for Left Card -->
+                    <div class="w-1/2">
+                        <h3 class="text-lg font-bold text-gray-800 mb-4">Ongoing Support</h3>
+                        <p class="text-gray-600 mb-6">
+                            Our job doesn’t end at delivery. We provide continuous support and maintenance to keep your website running smoothly.
+                        </p>
+                    </div>
+                    <div class="w-1/2">
+                        <img src="https://via.placeholder.com/300x170" alt="Progress Chart Example" class="rounded-lg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact us -->
+    <div class="bg-gray-100 pb-6 pt-2">
+        <h2 class="main-heading   text-center font-bold   leading-[3.25rem]">
+            All-In-One Business Software
+        </h2>
+        <p class="sub-heading  mt-4 text-center">
+            Empowering your business with cutting-edge systems designed to streamline operations
+        </p>
+    </div>
+    <div class="bg-gray-100 flex justify-center items-center pb-6 ">
+
+        <div class="container mx-auto p-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Left Side: Contact Form -->
+                <div class="bg-white p-6 rounded-lg">
+                    <form class="space-y-4">
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="relative">
+                                <i class="fas fa-user absolute left-3 top-3 text-gray-400"></i>
+                                <input type="text" placeholder="Name" class="pl-10 pr-4 py-2 border rounded-lg w-full">
+                            </div>
+                            <div class="relative">
+                                <i class="fas fa-phone-alt absolute left-3 top-3 text-gray-400"></i>
+                                <input type="text" placeholder="Phone Number"
+                                    class="pl-10 pr-4 py-2 border rounded-lg w-full">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="relative">
+                                <i class="fas fa-building absolute left-3 top-3 text-gray-400"></i>
+                                <input type="text" placeholder="Business Name"
+                                    class="pl-10 pr-4 py-2 border rounded-lg w-full">
+                            </div>
+                            <div class="relative">
+                                <i class="fas fa-industry absolute left-3 top-3 text-gray-400"></i>
+                                <input type="text" placeholder="Industry/Type of Business"
+                                    class="pl-10 pr-4 py-2 border rounded-lg w-full">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="relative">
+                                <i class="fas fa-map-marker-alt absolute left-3 top-3 text-gray-400"></i>
+                                <input type="text" placeholder="E-mail address"
+                                    class="pl-10 pr-4 py-2 border rounded-lg w-full">
+                            </div>
+                            <div class="relative">
+                                <i class="fas fa-globe absolute left-3 top-3 text-gray-400"></i>
+                                <input type="text" placeholder="Website URL (Optional)"
+                                    class="pl-10 pr-4 py-2 border rounded-lg w-full">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="relative">
+                                <i class="fas fa-dollar-sign absolute left-3 top-3 text-gray-400"></i>
+                                <input type="text" placeholder="Budget"
+                                    class="pl-10 pr-4 py-2 border rounded-lg w-full">
+                            </div>
+                            <div class="relative">
+                                <i class="fas fa-calendar-alt absolute left-3 top-3 text-gray-400"></i>
+                                <input type="text" placeholder="Expected Delivery Time"
+                                    class="pl-10 pr-4 py-2 border rounded-lg w-full">
+                            </div>
+                        </div>
+                        <textarea placeholder="Additional Notes or Requirements"
+                            class="w-full p-4 border rounded-lg h-30"></textarea>
+
+                        <button class="bg-black text-white py-2 px-4 rounded-full w-full md:w-auto">Send
+                            Request</button>
+                    </form>
+                </div>
+                <!-- Right Side: Cards -->
+                <div class="space-y-4">
+                    <!-- Next Steps Card -->
+                    <div class="bg-blue-100  p-6 rounded-lg flex flex-col items-center">
+                        <div class="text-3xl font-bold mb-4">Next Steps</div>
+                        <div class="text-lg mb-4">Here's what happens after you make a request </div>
+                        <ul class="list-disc list-inside text-left">
+                            <li>We review your requirements.</li>
+                            <li>Our team contacts you for further details.</li>
+                            <li>We provide a project proposal and timeline.</li>
+                            <li>Upon agreement, we start the development process.</li>
+                            <li>Regular updates and reviews until project completion.</li>
+                        </ul>
+                    </div>
+                    <!-- Chat With Our Team Card -->
+                    <div class="bg-gray-200 text-black p-6 rounded-lg flex flex-col items-center">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-envelope text-2xl"></i>
+                            <span class="ml-2">Chat With Our Team</span>
+                        </div>
+                        <div class="text-xl font-bold mb-4">email@pagedone.com</div>
+                        <button class="bg-gray-400 hover:bg-gray-500 text-white py-2 px-4 rounded-full">Contact
+                            Us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
 
