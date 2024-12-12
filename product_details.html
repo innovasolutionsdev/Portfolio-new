@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        Navbar Example
+    </title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet" />
+    <style>
+        .icon-hover:hover {
+            color: #6B46C1;
+            /* Tailwind's purple-600 */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hero-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            /* Full viewport height */
+        }
+
+        .w-full {
+            width: 100%;
+        }
+    </style>
+
+    <script>
+        function toggleCards() {
+            const hiddenCards = document.querySelectorAll('.hidden-card');
+            hiddenCards.forEach(card => {
+                card.classList.toggle('hidden');
+            });
+
+
+            // Change button text
+            const toggleButton = document.getElementById('toggleButton');
+            if (toggleButton.innerText === "View more") {
+                toggleButton.innerText = "Hide";
+            } else {
+                toggleButton.innerText = "View more";
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+
+<footer class="w-full">
+    <div class="mx-0 px-4 bg-purple-50 w-full">
+        <div class="flex justify-center items-center h-full w-full py-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-16 text-purple-800 text-center">
+                <div>
+                    <h3 class="font-bold text-purple-900 mb-4">
+                        Product
+                    </h3>
+                    <ul>
+                        <li class="mb-2">
+                            <a class="hover:text-purple-600 hover:underline" href="#">
+                                Features
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="hover:text-purple-600 hover:underline" href="#">
+                                Why Draftbit
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="hover:text-purple-600 hover:underline" href="#">
+                                Pricing
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="hover:text-purple-600 hover:underline" href="#">
+                                Experts
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-purple-900 mb-4">
+                        Quick Links
+                    </h3>
+                    <ul>
+                        <li class="mb-2">
+                            <a class="hover:text-purple-600 hover:underline" href="#">
+                                Products
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="hover:text-purple-600 hover:underline" href="#">
+                                Pricing
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="hover:text-purple-600 hover:underline" href="#">
+                                Our Domains
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="hover:text-purple-600 hover:underline" href="#">
+                                Our Service
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="hover:text-purple-600 hover:underline" href="#">
+                                FAQ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-purple-900 mb-4">
+                        Support
+                    </h3>
+                    <ul>
+                        <li class="mb-2">
+                            <a class="hover:text-purple-600 hover:underline" href="#">
+                                Community
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="hover:text-purple-600 hover:underline" href="#">
+                                Resources
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="hover:text-purple-600 hover:underline" href="#">
+                                Docs
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="hover:text-purple-600 hover:underline" href="#">
+                                Affiliates
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-purple-900 mb-4">
+                        Get started
+                    </h3>
+                    <ul>
+                        <li class="mb-2">
+                            <a class="hover:text-purple-600 hover:underline" href="#">
+                                Create Account
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="hover:text-purple-600 hover:underline" href="#">
+                                Sign In
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="h-[120px] flex justify-between items-top p-3 bg-purple-100">
+        <div class="flex space-x-4 pt-8">
+            <a class="bg-purple-200 p-2 rounded-full h-fit hover:bg-purple-300" href="#">
+                <i class="fab fa-twitter text-purple-700 icon-hover"></i>
+            </a>
+            <a class="bg-purple-200 p-2 rounded-full h-fit hover:bg-purple-300" href="#">
+                <i class="fab fa-linkedin-in text-purple-700 icon-hover"></i>
+            </a>
+            <a class="bg-purple-200 p-2 rounded-full h-fit hover:bg-purple-300" href="#">
+                <i class="fab fa-youtube text-purple-700 icon-hover"></i>
+            </a>
+            <a class="bg-purple-200 p-2 rounded-full h-fit hover:bg-purple-300" href="#">
+                <i class="fab fa-instagram text-purple-700 icon-hover"></i>
+            </a>
+            <a class="bg-purple-200 p-2 rounded-full h-fit hover:bg-purple-300" href="#">
+                <i class="fab fa-tiktok text-purple-700 icon-hover"></i>
+            </a>
+            <a class="text-purple-800 hover:text-purple-600" href="#">Loom Terms & Policies</a>
+        </div>
+        <div class="text-right pt-8">
+            <div class="flex items-center space-x-2 justify-end">
+                <img src="https://placehold.co/20x20" alt="Atlassian logo" class="h-5">
+                <span class="text-purple-900 font-bold">ATLASSIAN</span>
+            </div>
+            <div class="text-purple-700 text-sm">
+                © 2024, Loom, Inc. All Rights Reserved.
+            </div>
+        </div>
+    </div>
+</footer>
